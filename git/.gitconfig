@@ -1,0 +1,9 @@
+[user]
+	name = Yen-Chi Chen
+	email = zxkyjimmy@gmail.com
+[pull]
+	rebase = false
+[core]
+	excludesFile = ~/.gitignore
+[push]
+	autoSetupRemote = true
