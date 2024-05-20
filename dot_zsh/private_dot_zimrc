@@ -55,5 +55,5 @@ zmodule zsh-users/zsh-history-substring-search
 zmodule zsh-users/zsh-autosuggestions
 # }}} End configuration added by Zim install
 
-zmodule romkatv/powerlevel10k
+zmodule romkatv/powerlevel10k --use degit
 zmodule ohmyzsh/ohmyzsh --root plugins/git
