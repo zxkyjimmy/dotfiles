@@ -11,7 +11,8 @@
 # Sets sane Zsh built-in environment options.
 zmodule environment
 # Provides handy git aliases and functions.
-zmodule git
+# zmodule git
+zmodule ohmyzsh/ohmyzsh --root plugins/git
 # Applies correct bindkeys for input events.
 zmodule input
 # Sets a custom terminal title.
@@ -23,12 +24,7 @@ zmodule utility
 # Prompt
 #
 
-# Exposes to prompts how long the last command took to execute, used by asciiship.
-zmodule duration-info
-# Exposes git repository status information to prompts, used by asciiship.
-zmodule git-info
-# A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-zmodule asciiship
+zmodule romkatv/powerlevel10k --use degit
 
 #
 # Completion
@@ -40,6 +36,7 @@ zmodule esc/conda-zsh-completion --fpath .
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after all modules that add completion definitions.
 zmodule completion
+zmodule twpayne/chezmoi --root completions
 
 #
 # Modules that must be initialized last
@@ -54,6 +51,3 @@ zmodule zsh-users/zsh-history-substring-search
 # Fish-like autosuggestions for Zsh.
 zmodule zsh-users/zsh-autosuggestions
 # }}} End configuration added by Zim install
-
-zmodule romkatv/powerlevel10k --use degit
-zmodule ohmyzsh/ohmyzsh --root plugins/git
