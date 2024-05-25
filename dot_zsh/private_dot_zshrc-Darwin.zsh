@@ -1,11 +1,3 @@
-# Homebrew's completions
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-  autoload -Uz compinit
-  compinit
-fi
-
 # Python path
 export PATH=$PATH:$(brew --prefix python)/bin
 export PATH=$PATH:$(brew --prefix python)/libexec/bin
