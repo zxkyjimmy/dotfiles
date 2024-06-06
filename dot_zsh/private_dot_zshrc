@@ -142,7 +142,7 @@ unset key
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 
 # Aliases
-# alias vim='nvim'
+if (( ${+commands[nvim]} )) alias vim=nvim
 alias gco='git checkout'
 alias gcl='git clone --recurse-submodules'
 alias gl='git pull'
