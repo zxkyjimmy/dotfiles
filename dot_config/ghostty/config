@@ -1,7 +1,7 @@
 font-family = CaskaydiaCove Nerd Font
 font-size = 15
 window-colorspace = display-p3
-window-height = 30
+window-height = 24
 window-width = 80
 macos-titlebar-proxy-icon = hidden
 term = xterm-256color
