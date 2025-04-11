@@ -9,4 +9,3 @@ window-colorspace = display-p3
 background-opacity = 0.9
 macos-titlebar-proxy-icon = hidden
 gtk-titlebar = false
-term = xterm-256color
