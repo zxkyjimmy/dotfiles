@@ -1,5 +1,6 @@
 theme = Catppuccin Frappe
-font-family = CaskaydiaCove Nerd Font
+font-family = AnnotationM Nerd Font
+font-style = Bold
 font-size = 20
 window-height = 24
 window-width = 80
