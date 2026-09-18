@@ -159,3 +159,5 @@ export NVM_COMPLETION=true
 export NVM_LAZY_LOAD=true
 
 source "${ZDOTDIR:-${HOME}}/.`uname`.zsh"
+
+. "$HOME/.local/bin/env"
