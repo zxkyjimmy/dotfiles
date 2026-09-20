@@ -1,5 +1,3 @@
-export PATH="$HOME/.local/bin:$PATH"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$(''$HOME'/.miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

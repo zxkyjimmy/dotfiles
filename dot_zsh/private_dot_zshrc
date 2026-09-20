@@ -158,6 +158,9 @@ export LC_ALL=en_US.UTF-8
 export NVM_COMPLETION=true
 export NVM_LAZY_LOAD=true
 
+export PATH="$HOME/.local/bin:$PATH"
 source "${ZDOTDIR:-${HOME}}/.`uname`.zsh"
 
-. "$HOME/.local/bin/env"
+# uv completion
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
