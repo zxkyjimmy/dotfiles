@@ -12,3 +12,4 @@ background-opacity = 0.9
 macos-titlebar-proxy-icon = hidden
 gtk-titlebar = false
 shell-integration-features = ssh-terminfo
+config-file = ?linux.conf

@@ -2,4 +2,5 @@ README.*
 LICENSE
 {{ if ne .chezmoi.os "linux" }}
 .gitconfig.linux
+.config/ghostty/linux.conf
 {{ end }}
