@@ -1,2 +1,5 @@
 README.*
 LICENSE
+{{ if ne .chezmoi.os "linux" }}
+.gitconfig.linux
+{{ end }}
