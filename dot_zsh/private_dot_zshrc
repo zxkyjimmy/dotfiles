@@ -96,6 +96,14 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 #typeset -A ZSH_HIGHLIGHT_STYLES
 #ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
 
+# Environment
+export LC_ALL=en_US.UTF-8
+export PATH="$HOME/.local/bin:$PATH"
+
+# zsh-nvm
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+
 # ------------------
 # Initialize modules
 # ------------------
@@ -152,15 +160,12 @@ alias glg='git log --stat'
 
 # Others
 ZLE_RPROMPT_INDENT=0 # keep prompt left fit
-export LC_ALL=en_US.UTF-8
 
-# zsh-nvm
-export NVM_COMPLETION=true
-export NVM_LAZY_LOAD=true
-
-export PATH="$HOME/.local/bin:$PATH"
-source "${ZDOTDIR:-${HOME}}/.`uname`.zsh"
+# OS configuration
+source "${ZDOTDIR:-${HOME}}/.$(uname).zsh"
 
 # uv completion
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
+if (( $+commands[uv] )); then
+  eval "$(uv generate-shell-completion zsh)"
+  eval "$(uvx --generate-shell-completion zsh)"
+fi
