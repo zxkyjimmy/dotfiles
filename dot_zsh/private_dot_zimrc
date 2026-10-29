@@ -11,7 +11,7 @@ zmodule romkatv/powerlevel10k --use degit
 # Completion
 zmodule zsh-users/zsh-completions --fpath src
 zmodule esc/conda-zsh-completion --fpath .
-zmodule joke/zim-chezmoi --fpath functions
+zmodule joke/zim-chezmoi
 zmodule completion
 
 # Plugins
