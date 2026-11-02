@@ -399,6 +399,10 @@ tmux_conf_urlscan_options="--compact --dedupe"
 
 # this is the place to override or undo settings
 
+# enable copy-selection
+bind -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-selection
+bind -T copy-mode MouseDragEnd1Pane send-keys -X copy-selection
+
 # increase history size
 set -g history-limit 1000000
 
