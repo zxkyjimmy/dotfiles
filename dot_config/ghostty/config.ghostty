@@ -11,5 +11,7 @@ window-colorspace = display-p3
 background-opacity = 0.9
 macos-titlebar-proxy-icon = hidden
 gtk-titlebar = false
+auto-update = download
+cursor-style-blink = true
 shell-integration-features = ssh-terminfo
 config-file = ?linux.conf
