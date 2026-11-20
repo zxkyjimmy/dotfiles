@@ -1,2 +1,7 @@
 README.md
 LICENSE
+
+{{ if ne .chezmoi.os "linux" }}
+.config/git/config.linux
+.config/ghostty/config.linux
+{{ end }}

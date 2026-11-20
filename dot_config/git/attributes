@@ -1,0 +1,4 @@
+# Hide lock files from diff
+Cargo.lock -diff
+uv.lock -diff
+poetry.lock -diff

@@ -1,0 +1,4 @@
+auto_activate_base: false
+
+plugins:
+  auto_accept_tos: true
